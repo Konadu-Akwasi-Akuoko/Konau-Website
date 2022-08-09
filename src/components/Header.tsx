@@ -8,16 +8,16 @@ function Header() {
         <img src={Logo} alt="Website logo" className="header__img" />
       </a>
       <nav className="header__nav">
-        <a href="https://example.com" className="header__nav__a">
+        <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
           About
         </a>
-        <a href="https://example.com" className="header__nav__a">
+        <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
           Work
         </a>
-        <a href="https://example.com" className="header__nav__a">
+        <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
           Contact
         </a>
-        <a href="https://example.com" className="header__nav__a">
+        <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
           Blog
         </a>
       </nav>
