@@ -4,18 +4,20 @@ import Logo from "../assets/images/logo.svg";
 function Header() {
   return (
     <header className="header body__padding-horizontal header__padding-vertical">
-      <img src={Logo} alt="Website logo" className="header--img" />
-      <nav className="header--nav">
-        <a href="https://example.com" className="header--nav--a">
+      <a href="#main">
+        <img src={Logo} alt="Website logo" className="header__img" />
+      </a>
+      <nav className="header__nav">
+        <a href="https://example.com" className="header__nav__a">
           About
         </a>
-        <a href="https://example.com" className="header--nav--a">
+        <a href="https://example.com" className="header__nav__a">
           Work
         </a>
-        <a href="https://example.com" className="header--nav--a">
+        <a href="https://example.com" className="header__nav__a">
           Contact
         </a>
-        <a href="https://example.com" className="header--nav--a">
+        <a href="https://example.com" className="header__nav__a">
           Blog
         </a>
       </nav>
