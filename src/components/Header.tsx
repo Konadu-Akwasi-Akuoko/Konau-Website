@@ -7,7 +7,7 @@ function Header() {
       <a href="#main">
         <img src={Logo} alt="Website logo" className="header__img" />
       </a>
-      <nav className="header__nav">
+      <nav className="header__nav-desktop">
         <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
           About
         </a>
@@ -20,6 +20,19 @@ function Header() {
         <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
           Blog
         </a>
+      </nav>
+      <nav className="header__nav-mobile">
+        <span className="checkbox-container">
+          <input className="checkbox-trigger" type="checkbox" />
+          <span className="menu-content">
+            <ul>
+              <li>About</li>
+              <li>Work</li>
+              <li>Contact</li>
+            </ul>
+            <span className="hamburger-menu" />
+          </span>
+        </span>
       </nav>
     </header>
   );
