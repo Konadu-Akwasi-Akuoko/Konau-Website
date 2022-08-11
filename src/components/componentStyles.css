@@ -11,6 +11,13 @@
   justify-content: space-between;
 }
 
+.header-overflow--hidden {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 0.2px solid #c3f8ed;
+  justify-content: space-between;
+}
+
 .header__img {
   width: auto;
   height: 60px;
@@ -45,6 +52,11 @@
 
 /* Tablets and lower screens */
 @media (max-width: 768px) {
+  .header {
+    /* Not 100% because of the padding on the left and right. */
+    width: 90%;
+  }
+
   .header__img {
     width: auto;
     height: 40px;
@@ -60,121 +72,48 @@
   }
 
   .header__nav-mobile {
-    width: 50%;
-  }
-
-  .checkbox-container {
-    display: block;
-    float: left;
-    width: 50px;
-    height: 50px;
+    display: inline-block;
     position: relative;
-    background: #182825;
   }
 
-  .checkbox-trigger {
-    opacity: 0;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 0px;
-    cursor: pointer;
-    z-index: 5;
-  }
-
-  .hamburger-menu,
-  .hamburger-menu::before,
-  .hamburger-menu::after {
-    display: block;
-    position: absolute;
-    background: white;
-    width: 40px;
-    height: 4px;
-    margin: 1.3em 3em;
-    transition: background 0.3s;
-    border-radius: 4px;
-  }
-
-  .hamburger-menu::before,
-  .hamburger-menu::after {
-    content: "";
-    position: absolute;
-    margin: -0.7em 0 0;
-    transition: width 0.7s ease 0.3s, transform 0.7s ease 0.3s;
-  }
-
-  .hamburger-menu::after {
-    margin-top: 0.7em;
-  }
-
-  .hamburger-menu {
+  .header__nav-mobile__icon {
     position: relative;
-    display: block;
-    margin: 0;
-    margin-top: 1.45em;
-    margin-right: 0.35em;
-    margin-left: 0.35em;
-    margin-bottom: 1.45em;
-    transition: width 0.3s ease;
+    z-index: 10;
   }
 
-  .checkbox-trigger:checked {
-    left: 202px;
+  .header__nav-mobile__div-active {
+    right: 0px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px -40px 0px 0px;
+    width: 50vw;
+    transition: all 0.5s ease-in-out;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
   }
 
-  .checkbox-trigger:checked + .menu-content .hamburger-menu {
-    width: 2em;
-
-    transition: width 0.7s ease 0.7s;
+  .header__nav-mobile__div-non--active {
+    right: -50vw;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px 0px 40px;
+    width: 50vw;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    /* display: none; */
   }
 
-  .checkbox-trigger:checked + .menu-content .hamburger-menu::before {
-    width: 1.2em;
-    transform: rotate(-35deg);
-    margin-top: -0.4em;
+  .header__nav-mobile__div__ul {
+    padding: 40px;
+    list-style-type: none;
   }
 
-  .checkbox-trigger:checked + .menu-content .hamburger-menu::after {
-    width: 1.2em;
-    transform: rotate(35deg);
-    margin-top: 0.4em;
-  }
-
-  .checkbox-trigger:checked + .menu-content ul {
-    width: 200px;
-    height: 200px;
-    transition: width 0.7s ease 0.3s, height 0.3s ease;
-  }
-
-  .menu-content {
-    display: flex;
-    background: #182825;
-    color: white;
-    float: left;
-  }
-
-  .menu-content ul {
-    display: block;
-    padding-left: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin: 0;
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-    transition: height 0.3s ease 0.7s, width 0.7s ease;
-  }
-
-  .menu-content ul li {
-    list-style: none;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    cursor: pointer;
-    transition: color 0.5s, background 0.5s;
-  }
-
-  .menu-content ul li:hover {
-    color: #0cd6ad;
-    background: #1e332f;
+  .header__nav-mobile__div__ul > li {
+    font-weight: 500;
+    margin-bottom: 3rem;
   }
 }
