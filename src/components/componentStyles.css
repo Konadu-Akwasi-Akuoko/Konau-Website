@@ -1,0 +1,119 @@
+/*! Header section */
+.header__padding-vertical {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 0.2px solid #c3f8ed;
+  justify-content: space-between;
+}
+
+.header-overflow--hidden {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 0.2px solid #c3f8ed;
+  justify-content: space-between;
+}
+
+.header__img {
+  width: auto;
+  height: 60px;
+}
+
+.header__nav-desktop {
+  display: flex;
+  column-gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.header__nav-mobile {
+  display: none;
+}
+
+.header__nav__a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.header__nav__a:hover {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Tablets and lower screens */
+@media (max-width: 768px) {
+  .header {
+    /* Not 100% because of the padding on the left and right. */
+    width: 90%;
+  }
+
+  .header__img {
+    width: auto;
+    height: 40px;
+  }
+
+  .header__padding-vertical {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .header__nav-desktop {
+    display: none;
+  }
+
+  .header__nav-mobile {
+    display: inline-block;
+    position: relative;
+  }
+
+  .header__nav-mobile__icon {
+    position: relative;
+    z-index: 10;
+  }
+
+  .header__nav-mobile__div-active {
+    right: 0px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px -40px 0px 0px;
+    width: 50vw;
+    transition: all 0.5s ease-in-out;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .header__nav-mobile__div-non--active {
+    right: -50vw;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px 0px 40px;
+    width: 50vw;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    /* display: none; */
+  }
+
+  .header__nav-mobile__div__ul {
+    padding: 40px;
+    list-style-type: none;
+  }
+
+  .header__nav-mobile__div__ul > li {
+    font-weight: 500;
+    margin-bottom: 3rem;
+  }
+}
