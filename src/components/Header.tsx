@@ -6,10 +6,23 @@ import Logo from "../assets/images/logo.svg";
 
 function Header() {
   const [isMenuActive, setIsMenuActive] = React.useState(false);
+  const [isHidden, setIsHidden] = React.useState(true);
 
   const handleMenuClick = () => {
     setIsMenuActive((prevState) => !prevState);
   };
+
+  // If the menu is non-active, the menu will be hidden, and
+  // it's state needs to be tracked with a useEffect hook.
+  React.useEffect(() => {
+    if (isMenuActive) {
+      setIsHidden(false);
+    } else {
+      setTimeout(() => {
+        setIsHidden(true);
+      }, 600);
+    }
+  }, [isMenuActive]);
 
   return (
     <header className="header body__padding-horizontal header__padding-vertical">
@@ -51,9 +64,10 @@ function Header() {
 
         <div
           className={
-            isMenuActive
-              ? "header__nav-mobile__div-active"
-              : "header__nav-mobile__div-non--active"
+            (isMenuActive
+              ? "header__nav-mobile__div-active "
+              : "header__nav-mobile__div-non--active ") +
+            (isHidden ? "header__nav-mobile__div-non--active-hidden " : "")
           }
         >
           <ul className="header__nav-mobile__div__ul">
