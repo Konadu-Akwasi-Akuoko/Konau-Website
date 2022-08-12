@@ -31,6 +31,11 @@ p {
   margin-inline-end: 0px;
 }
 
+.p-content {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
 .body__padding-horizontal {
   padding-left: 15%;
   padding-right: 15%;
@@ -63,6 +68,7 @@ p {
 
 .h1-bold {
   font-size: 3.75rem;
+
   font-weight: 700;
 }
 
