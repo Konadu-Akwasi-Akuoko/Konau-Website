@@ -4,6 +4,7 @@
 :root {
   --primary-color: #16b894;
   --primary-color-700: #0d6f5a;
+  --primary-color-900: #074033;
   --normal-gradient: linear-gradient(119.05deg, #89d7ff 1.63%, #79fcd5 73.91%);
   --text-gradient: -webkit-linear-gradient(
     119.05deg,
@@ -14,6 +15,7 @@
 
 * {
   font-family: "Raleway", sans-serif;
+  color: var(--primary-color-900);
 }
 
 body {
@@ -37,6 +39,20 @@ p {
 .body__padding-vertical {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.h3-medium {
+  font-size: 1.25rem;
+  font-family: Raleway;
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.h2-bold {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.5rem;
 }
 
 .h2-light {
