@@ -26,17 +26,17 @@ function Header() {
 
   return (
     <header className="header body__padding-horizontal header__padding-vertical">
-      <a href="#main">
+      <a href="/">
         <img src={Logo} alt="Website logo" className="header__img" />
       </a>
       <nav className="header__nav-desktop">
-        <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
+        <a href="#about" className="header__nav__a">
           About
         </a>
-        <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
+        <a href="#work" className="header__nav__a">
           Work
         </a>
-        <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
+        <a href="#contact" className="header__nav__a">
           Contact
         </a>
         <a href="https://twitter.com/akuoko_konadu" className="header__nav__a">
@@ -71,9 +71,30 @@ function Header() {
           }
         >
           <ul className="header__nav-mobile__div__ul">
-            <li>About</li>
-            <li>Work</li>
-            <li>Contact</li>
+            <a
+              href="#about"
+              onClick={() => {
+                setIsMenuActive((prevState) => !prevState);
+              }}
+            >
+              <li>About</li>
+            </a>
+            <a
+              href="#work"
+              onClick={() => {
+                setIsMenuActive((prevState) => !prevState);
+              }}
+            >
+              <li>Work</li>
+            </a>
+            <a
+              href="#contact"
+              onClick={() => {
+                setIsMenuActive((prevState) => !prevState);
+              }}
+            >
+              <li>Contact</li>
+            </a>
           </ul>
         </div>
       </nav>

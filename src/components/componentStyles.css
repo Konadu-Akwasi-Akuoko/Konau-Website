@@ -130,7 +130,11 @@
   list-style-type: none;
 }
 
-.header__nav-mobile__div__ul > li {
+.header__nav-mobile__div__ul > a {
+  text-decoration: none;
+}
+
+.header__nav-mobile__div__ul > a > li {
   font-weight: 500;
   margin-bottom: 3rem;
 }
