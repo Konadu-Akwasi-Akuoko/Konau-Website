@@ -19,6 +19,10 @@
   color: var(--primary-color-900);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   background-color: white;

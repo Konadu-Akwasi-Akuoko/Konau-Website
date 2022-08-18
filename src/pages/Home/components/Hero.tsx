@@ -4,7 +4,7 @@ import HeroImage from "../../../assets/images/heroImage.png";
 function Hero() {
   return (
     <main
-      id="main"
+      id="about"
       className="hero body__padding-vertical body__padding-horizontal"
     >
       <div className="hero__div01">
