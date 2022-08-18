@@ -6,7 +6,10 @@ import SkillCard from "./SkillCard";
 
 function Skills() {
   return (
-    <div className="skill body__padding-horizontal body__padding-vertical">
+    <div
+      id="work"
+      className="skill body__padding-horizontal body__padding-vertical"
+    >
       <p className="h3-medium">Skills</p>
       <span className="h2-bold colored-text skill__span">What I Offer</span>
       <div className="skill__div01">

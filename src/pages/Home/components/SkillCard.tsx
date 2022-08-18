@@ -14,7 +14,7 @@ function SkillCard({
   cardContent2,
 }: SkillCardProps) {
   return (
-    <div id="work" className="skill__div01__div">
+    <div className="skill__div01__div">
       <div className="skill__div01__div__div">
         <div className="skill__div01__div__div__div">
           <img
