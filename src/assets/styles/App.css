@@ -3,6 +3,7 @@
 
 :root {
   --primary-color: #16b894;
+  --primary-color-80: #cff9f0;
   --primary-color-700: #0d6f5a;
   --primary-color-900: #074033;
   --normal-gradient: linear-gradient(119.05deg, #89d7ff 1.63%, #79fcd5 73.91%);
@@ -29,6 +30,13 @@ p {
   margin-block-end: 0rem;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+.text-3xl {
+  color: var(--primary-color-900);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 .p-content {
@@ -70,6 +78,13 @@ p {
   font-size: 3.75rem;
 
   font-weight: 700;
+}
+
+.colored-text {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .button-primary {
