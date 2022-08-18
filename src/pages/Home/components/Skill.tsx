@@ -3,6 +3,10 @@ import BackendPic from "../../../assets/images/backend.svg";
 import FrontendPic from "../../../assets/images/frontend.svg";
 import DatabasePic from "../../../assets/images/database.svg";
 
+// TODO: Make this a reusable component.
+// TODO: Add a description of the skill pictures.
+// TODO: Make the skill component grow horizontally.
+
 function Skills() {
   return (
     <div className="skill body__padding-horizontal body__padding-vertical">
