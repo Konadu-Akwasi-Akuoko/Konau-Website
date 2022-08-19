@@ -116,21 +116,35 @@ p {
 
 .button-icon {
   color: var(--primary-color-700);
-  width: fit-content;
-  height: fit-content;
   padding: 0.5rem 1.5rem;
-  border-color: var(--primary-color-700);
-  border-width: 1px;
+  border: 1px solid var(--primary-color-700);
   border-radius: 4px;
+  background-color: inherit;
+  text-decoration: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: inherit;
-  cursor: pointer;
+  align-items: center;
 }
 
-.button-icon > a {
-  text-decoration: none;
+.button-icon:hover {
+  background-color: var(--primary-color-80);
+}
+
+.button-icon > span {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.button-icon > img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.pill {
+  padding: 0.2rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+  background-color: var(--primary-color-80);
 }
 
 /* Tablet and lower screens */
