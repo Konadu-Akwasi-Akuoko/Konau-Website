@@ -6,6 +6,7 @@
   --primary-color-80: #cff9f0;
   --primary-color-700: #0d6f5a;
   --primary-color-900: #074033;
+  --background-ash: #f4f4f4;
   --normal-gradient: linear-gradient(119.05deg, #89d7ff 1.63%, #79fcd5 73.91%);
   --text-gradient: -webkit-linear-gradient(
     119.05deg,
@@ -34,6 +35,11 @@ p {
   margin-block-end: 0rem;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  /* font-weight: 500; */
 }
 
 .text-3xl {
@@ -106,6 +112,39 @@ p {
 
 .button-primary:hover {
   background: white;
+}
+
+.button-icon {
+  color: var(--primary-color-700);
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--primary-color-700);
+  border-radius: 4px;
+  background-color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-icon:hover {
+  background-color: var(--primary-color-80);
+}
+
+.button-icon > span {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.button-icon > img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.pill {
+  padding: 0.2rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+  background-color: var(--primary-color-80);
 }
 
 /* Tablet and lower screens */
