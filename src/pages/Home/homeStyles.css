@@ -166,7 +166,6 @@
   display: flex;
   overflow: hidden;
   align-items: flex-start;
-  border-color: var(--dl-color-primary-500);
   border-radius: 4px;
   flex-direction: column;
   justify-content: flex-start;
@@ -233,8 +232,7 @@
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-  /* background-color: var(--black-100); */
-  background-color: gray;
+  background-color: var(--black-100);
 }
 
 .contact__div01 {
@@ -283,7 +281,7 @@
   height: auto;
 }
 
-.contact__div02 {
+.contact__form {
   flex: 0 0 auto;
   width: 50%;
   display: flex;
@@ -291,6 +289,62 @@
   flex-direction: column;
 }
 
+.contact__form__div01 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.contact__form__div01__div01 {
+  width: 45%;
+  margin-bottom: 0px;
+  flex-direction: column;
+}
+
+.contact__form__div01__div01__label {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.contact__form__div01__div01__input {
+  width: 100%;
+  color: white;
+  padding: 0.5rem 0rem;
+  border: none;
+  border-color: white;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+.contact__form__div01__div02 {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact__form__divX3 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__form__divX3__label {
+  color: white;
+}
+
+.contact__form__div01__button {
+  margin-top: 2rem;
+}
+
+/* !Footer section */
+.footer {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
 /* Tablet and lower screens */
 @media (max-width: 768px) {
   .hero {
@@ -356,11 +410,42 @@
     display: flex;
     overflow: hidden;
     align-items: flex-start;
-    border-color: var(--dl-color-primary-500);
     border-radius: 4px;
     flex-direction: column;
     justify-content: flex-start;
     background-color: white;
-    border-bottom-width: 5px;
+  }
+
+  /* !Contact section */
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__div01 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__div01__div02 {
+    flex-wrap: wrap;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+
+  .contact__form__div01__div01 {
+    width: 100%;
+    margin-bottom: 0px;
+    flex-direction: column;
+  }
+
+  .contact__form__div01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    row-gap: 2rem;
   }
 }
