@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Skills from "./components/Skill";
 import Work from "./components/Work";
@@ -11,6 +12,7 @@ function Home() {
       <AboutMe />
       <Skills />
       <Work />
+      <Contact />
     </>
   );
 }
