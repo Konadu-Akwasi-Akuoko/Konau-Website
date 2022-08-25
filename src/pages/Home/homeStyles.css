@@ -226,6 +226,17 @@
   flex-direction: row;
 }
 
+/* !Contact section */
+.contact {
+  /* width: 100%; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: var(--black-100); */
+  background-color: gray;
+}
+
 /* Tablet and lower screens */
 @media (max-width: 768px) {
   .hero {
