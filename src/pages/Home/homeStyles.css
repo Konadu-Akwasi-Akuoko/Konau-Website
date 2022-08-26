@@ -427,6 +427,8 @@
   }
 
   .contact__div01__div02 {
+    column-gap: 1rem;
+    row-gap: 1rem;
     flex-wrap: wrap;
   }
 
