@@ -1,3 +1,45 @@
+/* !AlertComingSoon section */
+@keyframes alert-remove {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes alertAdd {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.alert {
+  padding: 1rem;
+  background-color: antiquewhite;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  align-items: center;
+  animation: alertAdd 1s ease-in-out;
+}
+
+.alert > button {
+  width: fit-content;
+}
+
+.alert-remove {
+  animation: alert-remove 0.5s ease-in-out;
+}
+
+.alert-hidden {
+  display: none;
+}
+
 /*! Header section */
 .header__padding-vertical {
   padding-top: 1.25rem;

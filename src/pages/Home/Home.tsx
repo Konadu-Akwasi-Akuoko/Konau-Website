@@ -1,4 +1,5 @@
 import React from "react";
+import AlertComingSoon from "../../components/AlertComingSoon";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
@@ -8,6 +9,7 @@ import Work from "./components/Work";
 function Home() {
   return (
     <>
+      <AlertComingSoon />
       <Hero />
       <AboutMe />
       <Skills />
