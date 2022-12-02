@@ -49,8 +49,12 @@
 .header {
   display: flex;
   align-items: flex-end;
-  border-bottom: 0.2px solid #c3f8ed;
+  background-color: hsl(167, 90%, 97%);
+  border-bottom: 0.2px solid #e5fff9;
   justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .header-overflow--hidden {
@@ -62,7 +66,7 @@
 
 .header__img {
   width: auto;
-  height: 60px;
+  height: 40px;
 }
 
 .header__nav-desktop {
