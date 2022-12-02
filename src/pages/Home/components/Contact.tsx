@@ -9,7 +9,10 @@ import sendBtnIcon from "../../../assets/images/sendBtnIcon.svg";
 function Contact() {
   return (
     <>
-      <div className="contact body__padding-vertical body__padding-horizontal">
+      <div
+        id="contact"
+        className="contact body__padding-vertical body__padding-horizontal"
+      >
         <div className="contact__div01">
           <div className="contact__div01__div01">
             <p className="contact__div01__div01__p01 h2-light">
