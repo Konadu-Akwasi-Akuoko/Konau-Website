@@ -23,37 +23,46 @@ function Contact() {
             </p>
           </div>
           <div className="contact__div01__div02">
-            <div className="contact__divX2__div">
-              <img
-                alt="ALT"
-                src={twitterSocialIcon}
-                className="contact__divX2__div__img"
-              />
-            </div>
-            <div className="contact__divX2__div">
-              <img
-                alt="ALT"
-                src={githubSocialIcon}
-                className="contact__divX2__div__img"
-              />
-            </div>
-            <div className="contact__divX2__div">
-              <img
-                alt="ALT"
-                src={linkedInSocialIcon}
-                className="contact__divX2__div__img"
-              />
-            </div>
-            <div className="contact__divX2__div">
-              <img
-                alt="ALT"
-                src={mediumSocialIcon}
-                className="contact__divX2__div__img"
-              />
-            </div>
+            <a href="https://twitter.com/akuoko_konadu">
+              <div className="contact__divX2__div">
+                <img
+                  alt="ALT"
+                  src={twitterSocialIcon}
+                  className="contact__divX2__div__img"
+                />
+              </div>
+            </a>
+            <a href="https://github.com/Konadu-Akwasi-Akuoko">
+              <div className="contact__divX2__div">
+                <img
+                  alt="ALT"
+                  src={githubSocialIcon}
+                  className="contact__divX2__div__img"
+                />
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/konaduakwasiakuoko-codedkaa/">
+              <div className="contact__divX2__div">
+                <img
+                  alt="ALT"
+                  src={linkedInSocialIcon}
+                  className="contact__divX2__div__img"
+                />
+              </div>
+            </a>
+            <a href="https://medium.com/@konaduakwasiakuoko">
+              <div className="contact__divX2__div">
+                <img
+                  alt="ALT"
+                  src={mediumSocialIcon}
+                  className="contact__divX2__div__img"
+                />
+              </div>
+            </a>
           </div>
         </div>
-        <form className="contact__form">
+        {/* Fix this or don't display it. Thant's an ultimatum. */}
+        <form style={{ display: "none" }} className="contact__form">
           <div className="contact__form__div01">
             <div className="contact__form__div01__div01">
               <label
@@ -111,7 +120,7 @@ function Contact() {
       </div>
       <div className="footer">
         <span className="content">
-          <span>Built with by ❤️</span>
+          <span>Built with ❤️ by </span>
           <a href="https://twitter.com/akuoko_konadu"> @akuoko_konadu</a>
         </span>
       </div>

@@ -15,9 +15,12 @@ function Hero() {
             Creative Full Stack Web Developer
           </p>
         </div>
-        <button className="button-primary" type="button">
-          Learn More
-        </button>
+
+        <a href="#work">
+          <button className="button-primary" type="button">
+            Learn More
+          </button>
+        </a>
       </div>
       <div className="hero-div02">
         <img alt="" src={HeroImage} className="home-hero-image1" />
