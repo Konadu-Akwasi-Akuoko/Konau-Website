@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/require-default-props */
 import React from "react";
 import linkBtnIcon from "../../../assets/images/linkBtnIcon.svg";
@@ -31,7 +32,11 @@ function WorkCard({
           <div className="work__divX4__div01">
             {pills.map((pill, index) => {
               return (
-                <span id={index.toString()} className="text-sm pill">
+                <span
+                  key={index.toString()}
+                  id={index.toString()}
+                  className="text-sm pill"
+                >
                   {pill}
                 </span>
               );
