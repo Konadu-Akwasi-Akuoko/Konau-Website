@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import AboutImage from "../../../assets/images/aboutImage.png";
 
@@ -15,23 +16,39 @@ function AboutMe() {
         <p className="h3-medium">About Me</p>
         <p className="about__div02__p02 h2-bold">Full stack developer</p>
         <p className="about__div02__p03 p-content">
-          Hello! My name is Konadu, and I like making things that are
-          interactive and exist online including websites.
+          I am a student of the Bachelor&apos;s of Science department, studying
+          Information Technology with Education at &nbsp;
+          <span>
+            <a href="https://aamusted.edu.gh/">
+              Akenten Appiah-Menka University of Skills Training and
+              Entrepreneurial Development.
+            </a>
+          </span>
         </p>
         <p className="about__div02__p04 p-content">
-          When I decided to attempt and make my own game with Unity3d in 2019,
-          that is when my interest in programming first began. It turns out that
-          experience taught me a lot about programming.
+          I build <a href="#work-done">full stack web applications</a>, I
+          construct websites utilizing ReactJS, NodeJS, ExpressJS, MongoDB, and
+          Netlify. I recently finished my internship as a teaching assistant at
+          the Open Labs NIIT, Kumasi campus. Due to my expertise in programming
+          languages and software development in general, I assisted the
+          instructors at Open Labs NIIT in teaching ReactJS, MySQL, and Excel,
+          among other subjects.
         </p>
         <p className="about__div02__p05 p-content">
-          I left up game programming when I began my undergraduate studies in
-          computer technology because I fell in love with web development. I can
-          now create extremely interactive websites with frontend and backend
-          tools like NodeJS, ReactJS, ExpressJS, and MongoDB.
+          Additionally, I offered to&nbsp;
+          <a href="https://gdsc.community.dev/akenten-appiah-menka-university-of-skills-training-and-entrepreneurial-development/">
+            lead the AAMUSTED Google Developer Student Club at my school
+          </a>
+          , where I mostly aid in this effort by providing engaging seminars and
+          activities that broaden students knowledge of developer tools and
+          platforms. In general, I am dedicated to supporting, expanding, and
+          instructing the developer community at my school.
         </p>
-        <button className="button-primary" type="button">
-          Skills &amp; Experience
-        </button>
+        <a href="#work">
+          <button className="button-primary" type="button">
+            Skills &amp; Experience
+          </button>
+        </a>
       </div>
     </div>
   );

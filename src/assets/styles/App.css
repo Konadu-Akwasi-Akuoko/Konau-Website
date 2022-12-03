@@ -111,6 +111,10 @@ p {
   cursor: pointer;
 }
 
+a > .button-primary {
+  text-decoration: none;
+}
+
 .button-primary:hover {
   background: white;
 }
