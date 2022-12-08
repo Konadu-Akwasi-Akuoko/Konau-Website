@@ -2,7 +2,8 @@
 
 # konaduakwasi.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b9524d56-d019-49fb-99db-83c53700f021/deploy-status)](https://app.netlify.com/sites/konadu/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b9524d56-d019-49fb-99db-83c53700f021/deploy-status)](https://app.netlify.com/sites/konadu/deploys) [![Testing CI/CD](https://github.com/Konadu-Akwasi-Akuoko/Konadu-Website/actions/workflows/tests.yml/badge.svg)](https://github.com/Konadu-Akwasi-Akuoko/Konadu-Website/actions/workflows/tests.yml)
+
 
 Simple overview of use/purpose.
 
